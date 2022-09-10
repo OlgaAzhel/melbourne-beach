@@ -1,10 +1,28 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: OpenSans, Georgia, 'Times New Roman', Times, serif;
     color: rgb(12, 74, 124);
     margin: auto;
     background-image: url(images/sand.jpeg);
     box-sizing: border-box;
 
+}
+
+body, div, span, p, select, input, label, textarea, legend, h1, h2, h3, h4, h5, button, form, fieldset {
+    box-sizing: border-box;
+
+}
+select, input, label, textarea {
+    font-size: inherit;
+    color: rgb(12, 74, 124);
 }
 
 body {
@@ -92,7 +110,7 @@ h2 {
 }
 p {
     font-size: 1.3em;
-    text-align: center;
+    text-align:justify;
 }
 .main {
     display: flex;
@@ -112,7 +130,7 @@ input[type=checkbox] {
 }
 
 .container img {
-    max-width: 280px;
+    max-width: 100%;
     transition: transform 0.25s ease;
     cursor: zoom-in;
 }
@@ -136,115 +154,71 @@ input[type=checkbox] {
 }
  /* FORM CSS  */
 
-
-fieldset {
-    line-height: 1.5em;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-
+.questionnaire legend {
+    font-size: 1em;
+    font-weight: bold;
 }
-.questions {
-    width: 100%;
+
+.questionnaire {
+    font-size: 18px;
+}
+
+.questionnaire fieldset > div {
     display: flex;
     flex-direction: row;
 }
 
 
-.parent1 {
-    width: 40%;
-    display: block;
-    align-items: center;
-    justify-content: space-around;
+.questionnaire .column {
+    flex: 1;
 }
-.parent1 > div {
+
+.questionnaire .column > div {
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.parent2 {
-    width: 60%;
-    display: block;
-    justify-content: space-around;
-}
-.parent2 > div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-button {
-    width: 100px;
-    height: 25px;
-    margin-top: 25px;
-}
-
-/* input {
-    display: block;
-} */
-
-textarea {
     width: 80%;
-    margin-top: 3%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
+    margin: auto;
 }
 
-#age {
-    width: 60%;
+.questionnaire select, .questionnaire input, .questionnaire label, .questionnaire textarea {
+    font-size: inherit;
+    color: #0c4a7c;
+    margin-bottom: 5px;
 }
-#country {
-    width: 60%;
-}
-#name {
-    width: 60%;
-}
-#reason {
-    width: 80%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
-}
-#state {
-    width: 60%;
+.questionnaire select, .questionnaire input, .questionnaire textarea {
+    border: white solid 1px;
 }
 
-select {
-    height: 1.5em;
-    font-size: 1em;
-    color: rgb(12, 74, 124);
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
+.questionnaire .submit {
+    justify-content: right;
+}
+.questionnaire button {
+    margin-right: 5%;
+    margin-top: 5px;
+    color: #0c4a7c;
+    font-size: 24px;
+    border: white solid 1px;
+    background-color: #fff;
 }
 
-input {
-    display: block;
-    height: 1.5em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
 }
-label {
-    font-weight: 100;
-    font-size: 1.1em;
-    margin-top: 3%;
+.socialmedia > div {
 }
-legend {
-    font-size: x-large;
-    font-weight: 300;
+
+.sm-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.sm-buttons a {
+    margin-left: 8px;
 }

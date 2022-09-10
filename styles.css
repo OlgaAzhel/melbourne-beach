@@ -1,0 +1,161 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(12, 74, 124);
+    margin: auto;
+    background-image: url(images/sand.jpeg);
+    box-sizing: border-box;
+
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    max-width:1200px;
+    margin: auto;
+    padding: 3px;
+    background-color: #80d9e7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navigation {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    background-color: aliceblue;
+    font-size: 1.5em;
+    padding: 10px 0px;
+}
+
+.navigation > li {
+    width: 24%;
+    border-left: 1px solid #80d9e7;
+   border-right:1px solid #80d9e7;
+}
+
+li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a:link {
+    color: rgb(12, 74, 124) ;
+    text-decoration: none;
+ }
+
+ a:visited {
+    text-decoration: none;
+    color: rgb(12, 74, 124)
+ }
+
+ img {
+    max-width: 1200px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.finish {
+    text-align:justify;
+}
+
+.main-three {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2 {
+    text-align: center;
+}
+p {
+    font-size: 1.3em;
+    text-align: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.container img {
+    max-width: 280px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+#zoomCheck1:checked ~ label > img {
+    transform: scale(3);
+    cursor: zoom-out;
+    margin-left: 400px;
+}
+
+
+#zoomCheck2:checked ~ label > img {
+    transform: scale(3);
+    cursor: zoom-out;
+}
+
+#zoomCheck3:checked ~ label > img {
+    transform: scale(3);
+    cursor: zoom-out;
+    margin-right: 400px;
+}
+ /* FORM CSS  */
+
+
+fieldset {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+
+}
+.parent {
+    width:50%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.parent > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+input {
+    display: block;
+}

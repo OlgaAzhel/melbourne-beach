@@ -87,6 +87,9 @@ a:link {
     color: rgb(12, 74, 124)
  }
 
+ a:hover {
+    color: rgb(239, 35, 171);
+ }
  img {
     max-width: 1200px;
     margin: auto;

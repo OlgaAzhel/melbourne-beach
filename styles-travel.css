@@ -87,6 +87,9 @@ a:visited {
     color: rgb(12, 74, 124)
  }
 
+ a:hover {
+    color: rgb(239, 35, 171);
+ }
 /* img {
     max-width: 1200px;
     margin: auto;
@@ -128,18 +131,6 @@ a:visited {
     text-decoration:underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 h2 {
     text-align: left;
 }
@@ -147,6 +138,63 @@ p {
     font-size: 1.3em;
     text-align:justify;
 }
+.image-gallery {
+    display: flex;
+  }
+
+.image-gallery {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+  .image-gallery > li {
+    flex-basis: 350px;
+    width: 350px;
+    position: relative;
+    cursor: pointer;
+
+  }
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
+
+  .overlay span a {
+    margin-top: 10px;
+    color: rgb(246, 231, 16);
+  }
+
+  .overlay span a:hover {
+    color: rgb(252, 48, 184);
+  }
+  /* hover */
+.image-gallery li:hover .overlay {
+    transform: scale(1);
+  }
+
 
  /* FORM CSS  */
 /*
